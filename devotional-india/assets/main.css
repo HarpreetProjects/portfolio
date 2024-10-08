@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'Berkshire Swash';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/berkshireswash/v20/ptRRTi-cavZOGqCvnNJDl5m5XmN_qs42.ttf) format('truetype');
+  }
+  body {
+    background-color: #feb70d;
+    background-image: url(images/bg.jpg);
+    background-position: top center;
+    background-repeat: repeat;
+    margin: 0;
+   }
+
+
+   .dot{
+    width:35px;
+    height:35px;
+    position:absolute;
+    background: url(http://img.babathe.com/upload/specialDisplay/htmlImage/2019/20190104_rose2.png);
+    background-size: 100% 100%;
+
+  }
+  .dot2{
+    width:35px;
+    height:35px;
+    position:absolute;
+    background: url(http://img.babathe.com/upload/specialDisplay/htmlImage/2019/20190104_rose.png);
+    background-size: 100% 100%;
+  }
+  .dot3{
+    width:35px;
+    height:35px;
+    position:absolute;
+    background: url(http://img.babathe.com/upload/specialDisplay/htmlImage/2019/20190104_rose3.png);
+    background-size: 100% 100%;
+  }
+
+  .main-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  .main-container .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgb(9,9,121);
+    background: linear-gradient(180deg, rgba(9,9,121,0) 20%, rgba(63,200,206,1) 100%);
+  }
+  .main-container .heading-wrapper {
+    color: #fff;
+    position: relative;
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+  }
+  .main-container .ganesh {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    top: 4em;
+    right: 0;
+    left: 0;
+  }
+  .main-container .heading-wrapper h1 {
+    display: inline-block;
+    font-size: 50px;
+    background-color: #05937b;
+    margin-top: 0.1em;
+    padding: 0 10px;
+  }
+  .main-container .heading-wrapper p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    color: #333;
+  }
+  .main-container .pray {
+    width: 275px;
+    height: 375px;
+    background-image: url('images/hands22.png');
+    background-size: cover;
+    z-index: 50;
+    position: absolute;
+    display: block;
+  }
+  
+  .main-container .pray.hand {
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    transition: 0.3s;
+  }
+  .main-container .pray.hand.active {
+    bottom: -409px;
+    right: 0;
+    left: 0;
+    transition: 0.3s;
+    
+  }
+
+  @media screen and (min-width:1366px) and (max-width:1400px) {
+
+    .main-container .heading-wrapper h1 {
+        font-size: 36px;
+      }
+      .main-container .heading-wrapper p {
+        font-size: 18px;
+      }
+
+    .main-container .ganesh {
+        width: 100%;
+        max-width: 400px;
+      }
+    .main-container .pray {
+        width: 210px;
+        height: 284px;
+      }
+      .main-container .pray.hand {
+        bottom: -60px;
+      }
+  }
+
+  @media screen and (min-width:300px) and (max-width:776px)  {
+
+    .main-container .heading-wrapper h1 {
+        font-size: 28px;
+      }
+      .main-container .heading-wrapper p {
+        font-size: 16px;
+      }
+
+    .main-container .ganesh {
+        width: 100%;
+        max-width: 350px;
+      }
+    .main-container .pray {
+        width: 210px;
+        height: 284px;
+      }
+      .main-container .pray.hand {
+        bottom: -50px;
+      }
+  }
+
+  .ca3-scroll-down-arrow {
+	background-image: url(images/arrow-down.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.ca3-scroll-down-link {
+  cursor:pointer;
+	height: 60px;
+	width: 60px;
+	margin: 0px 0 0 0px;
+	line-height: 60px;
+	position: absolute;
+	right: 30px;
+	bottom: 20px;
+	color: #FFF;
+	font-size: 70px;
+	z-index: 100;
+	text-decoration: none;
+	text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+
+	-webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
+	-moz-animation:    ca3_fade_move_down 2s ease-in-out infinite;
+	animation:         ca3_fade_move_down 2s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes ca3_fade_move_down {
+  0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,20px); opacity: 0; }
+}
+@-moz-keyframes ca3_fade_move_down {
+  0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,20px); opacity: 0; }
+}
+@keyframes ca3_fade_move_down {
+  0%   { transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,20px); opacity: 0; }
+}
+
+  .content {
+    width: 100%;
+    height: 100vh;
+    padding: 5em 2em;
+  }
+  
