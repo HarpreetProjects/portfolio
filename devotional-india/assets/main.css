@@ -127,6 +127,9 @@
 
   @media screen and (min-width:300px) and (max-width:776px)  {
 
+    .main-container .ganesh {
+      margin-top: 0;
+    }
 
     .main-container .heading-wrapper h1 {
       max-width: 280px;
@@ -146,7 +149,7 @@
         height: 334px;
       }
       .main-container .pray.hand {
-        bottom: -30px;
+        bottom: -40px;
       }
   }
 
